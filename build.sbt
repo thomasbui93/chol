@@ -2,19 +2,19 @@ name := "Chol"
  
 version := "1.0"
  
-scalaVersion := "2.11.8"
+scalaVersion := "2.12.8"
  
 lazy val versions = new {
-  val finatra = "2.2.0"
-  val guice = "4.0"
-  val logback = "1.1.7"
+  val finatra = "20.6.0"
+  val guice = "4.2.3"
+  val logback = "1.2.3"
 }
 
 resolvers ++= Seq(
   Resolver.sonatypeRepo("releases"),
   "Twitter Maven" at "https://maven.twttr.com"
 )
- 
+
 libraryDependencies ++= Seq(
   "com.twitter" %% "finatra-http" % versions.finatra,
   "com.twitter" %% "finatra-httpclient" % versions.finatra,
@@ -36,6 +36,6 @@ libraryDependencies ++= Seq(
   "com.twitter" %% "inject-modules" % versions.finatra % "test" classifier "tests",
 
   "org.mockito" % "mockito-core" % "1.9.5" % "test",
-  "org.scalatest" %% "scalatest" % "2.2.3" % "test",
-  "org.specs2" %% "specs2" % "2.3.12" % "test"
+  "org.scalatest" %% "scalatest" % "3.0.8" % "test",
+  "org.specs2" %% "specs2" % "2.5" % "test"
 )
