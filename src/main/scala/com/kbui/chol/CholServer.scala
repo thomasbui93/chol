@@ -2,7 +2,7 @@ package com.kbui.chol
 
 import com.twitter.finatra.http.routing.HttpRouter
 import com.twitter.finatra.http.HttpServer
-import com.kbui.chol.controllers.{HealthCheckController}
+import com.kbui.chol.controllers.HealthCheckController
 
 object CholServerMain extends CholServer
 

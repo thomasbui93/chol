@@ -14,7 +14,7 @@ resolvers ++= Seq(
   Resolver.sonatypeRepo("releases"),
   "Twitter Maven" at "https://maven.twttr.com"
 )
- 
+
 libraryDependencies ++= Seq(
   "com.twitter" %% "finatra-http" % versions.finatra,
   "com.twitter" %% "finatra-httpclient" % versions.finatra,
@@ -36,6 +36,6 @@ libraryDependencies ++= Seq(
   "com.twitter" %% "inject-modules" % versions.finatra % "test" classifier "tests",
 
   "org.mockito" % "mockito-core" % "1.9.5" % "test",
-  "org.scalatest" %% "scalatest" % "3.1.2" % "test",
+  "org.scalatest" %% "scalatest" % "3.0.8" % "test",
   "org.specs2" %% "specs2" % "2.5" % "test"
 )
